@@ -13,32 +13,33 @@ This project is a data pipeline that extracts product details from Amazon's sear
 1. Clone the repository:
    ```bash
    git clone https://github.com/USERNAME/REPOSITORY.git
-Navigate to the project directory:
-bash
-Copy code
-cd amazon_product_scraper
-Install the required libraries:
-bash
-Copy code
-pip install selenium pandas sqlalchemy
+
+2. Navigate to the project directory:
+
+      cd amazon_product_scraper
+3. Install the required libraries:
+
+      pip install selenium pandas sqlalchemy
+
+   
 Usage
-Make sure to have Chrome and ChromeDriver installed.
-Run the script:
-bash
-Copy code
-python scrape_amazon.py
-Check the output files: amazon_products.csv and amazon_products.db.
-Features
+1) make sure to have Chrome and ChromeDriver installed.
+
+2) Run the script:
+
+   python scraper.py
+3) Check the output files: amazon_products.csv.
+   
+**Features**
 Extracts product names and prices from Amazon.
 Saves data in both CSV and SQLite formats.
 Handles dynamic web elements with error handling.
 Challenges Faced
-One of the main challenges was navigating the dynamic structure of the Amazon webpage, which required careful selection of CSS selectors to extract the desired data. Implementing error handling was crucial to prevent the script from crashing due to missing elements.
+One of the main challenges was navigating the dynamic structure of the Amazon webpage, which required careful selection of CSS selectors to extract the desired data.
 
-Future Improvements
+**Future Improvements**
 Implement pagination to scrape multiple pages of results.
 Enhance the data cleaning process for better quality data.
-Add a user interface for easier interaction with the script.
 License
 This project is licensed under the MIT License.
 
